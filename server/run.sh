@@ -1,7 +1,6 @@
 #!/bin/bash
 
 IMG=$1
-IP=$2
 
 /bin/bash /root/imager/start-server.sh > /dev/null 2>&1
 
