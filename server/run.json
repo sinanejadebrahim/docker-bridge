@@ -1,0 +1,19 @@
+[
+  {
+    "id": "pull",
+    "execute-command": "/root/imager/run.sh",
+    "pass-arguments-to-command":
+    [
+      {
+        "source": "query",
+        "name": "img"
+      }
+    ],
+	"include-command-output-in-response": true
+ },
+ {
+    "id": "stop-server",
+    "execute-command": "/root/imager/pkiller.sh"
+ 
+  }
+]
