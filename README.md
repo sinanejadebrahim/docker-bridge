@@ -46,5 +46,6 @@ this is your main webhook file. when you run it using a command like this (webho
 now our scripts is going to download that image on the server - save it as a tar file and use python to broadcast that file on a port,then the run.sh scripts gives a url which we pass as response to our hook caller.<br>there is also a stop-server query which our client file calls when the image has been loaded on our client succesfully - which will stop the python webserver.<br>
 you can just run client file with a img name and everything will be taken care of in the background. ( ./client.sh 'nginx:latest' )
 this still need alot of work - it's just an idea for now and will be upgraded in the future.<br>
-#### there is a gif here which shows you how this works - wait for it to load...<br>
-<img src="vid.gif" width="600">
+#### there is a gif here which shows you how this works - wait for it to load...
+#### also, my parrots are very important ... :D
+<img src="vid.gif">
