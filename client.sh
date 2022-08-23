@@ -4,7 +4,7 @@ echo -e "\e[0;35m 😈 SINA NEJADEBRAHIM 😈 \e[0m \n\n"
 echo -e "working . . ."
 {
 IMG=$1
-RES=$(curl -s http://51.91.199.151:54321/hooks/pull?img=$IMG)
+RES=$(curl -s http://IP:PORT/hooks/pull?img=$IMG)
 
 while [ -z "$RES" ];
 do
@@ -16,7 +16,7 @@ echo "Downloading image . . ."
 wget $(echo $RES | awk '{print $2}') -O /tmp/$IMG.tar -q --show-progress
 echo -e "\e[0m"
 {
-curl -s http://51.91.199.151:54321/hooks/stop-server > /dev/null 2>&1
+curl -s http://IP:PORT/hooks/stop-server > /dev/null 2>&1
 docker load -i /tmp/$IMG.tar
 } &> /dev/null
 
